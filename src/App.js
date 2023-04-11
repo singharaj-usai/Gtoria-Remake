@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import Alert from './Sections/Alert/Alert';
 import Navbar from './Sections/Navbar/Navbar';
 import Buttons from './Components/Banner/Banner';
@@ -9,7 +9,6 @@ import Footer from './Sections/Footer/Footer';
 function App() {
 
   const navLinks = [
-    { name: 'Home', url: '/' },
     { name: 'Forum', url: '/forum' },
     { name: 'Games', url: '/games' },
     { name: 'Catalog', url: '/catalog' }
