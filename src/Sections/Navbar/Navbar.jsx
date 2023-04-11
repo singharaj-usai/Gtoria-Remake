@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
-function Navbar() {
+function Navbar({ navLinks }) {
   return (
     <nav className="navbar navbar-expand-lg navbar-expand-md navbar-light bg-light px-5">
       <Link className="navbar-brand" to="/">My App</Link>
@@ -11,15 +11,11 @@ function Navbar() {
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav ms-auto">
-          <li className="nav-item">
-            <Link className="nav-link" to="/forum">Forum</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/games">Games</Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="/catalog">Catalog</Link>
-          </li>
+          {navLinks.map((navLink, index) => (
+            <li key={index} className="nav-item">
+              <Link className="nav-link" to={navLink.url}>{navLink.name}</Link>
+            </li>
+          ))}
           <li className="nav-item dropdown">
             <a className="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
             <div className="dropdown-menu">
