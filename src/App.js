@@ -4,6 +4,7 @@ import Alert from './Sections/Alert/Alert';
 import Navbar from './Sections/Navbar/Navbar';
 import Buttons from './Components/Banner/Banner';
 import Forum from './Components/Forum/Forum';
+import TOS from './Components/TOS/TOS';
 import Footer from './Sections/Footer/Footer';
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/catalog">
               <h1>Catalog</h1>
+            </Route>
+            <Route path="/tos">
+              <TOS/>
             </Route>
           </Switch>
         </div>

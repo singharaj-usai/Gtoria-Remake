@@ -10,7 +10,7 @@ function Footer() {
                     <div className=''>
                         &copy; {new Date().getFullYear()} Graphictoria
                         <br />
-                        <Link to="/terms" className="text-primary text-white">Terms of Service</Link>
+                        <Link to="/tos" className="text-primary text-white">Terms of Service</Link>
                     </div>
                 </div>
             </div>
