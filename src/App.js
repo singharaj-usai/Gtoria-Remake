@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './Sections/Navbar/Navbar';
-import Buttons from './Components/Buttons/Buttons';
+import Buttons from './Components/Banner/Banner';
 import Forum from './Components/Forum/Forum';
 import Footer from './Sections/Footer/Footer';
 
@@ -18,7 +18,6 @@ function App() {
     <Router>
       <div className='bg-secondary'>
         <Navbar navLinks={navLinks} />
-        <div className="container p-4">
           <Switch>
             <Route exact path="/">
               <Buttons />
@@ -35,7 +34,6 @@ function App() {
           </Switch>
         </div>
         <Footer />
-      </div>
     </Router>
   );
 }
