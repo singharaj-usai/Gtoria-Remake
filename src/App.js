@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './Sections/Navbar/Navbar';
 import Buttons from './Components/Buttons/Buttons';
 import Forum from './Components/Forum/Forum';
+import Footer from './Sections/Footer/Footer';
 
 function App() {
 
@@ -13,13 +14,15 @@ function App() {
     { name: 'Catalog', url: '/catalog' }
   ];
   return (
-    <div>
+    <div className='bg-secondary'>
       <Navbar navLinks={navLinks} />
-      <div className="container">
+      <div className="container p-4">
 
-        <Buttons />
+       
         <Forum />
+        
       </div>
+      <Footer />
     </div>
   );
 }
