@@ -1,6 +1,8 @@
 import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import Navbar from './Sections/Navbar/Navbar';
 import Buttons from './Components/Buttons/Buttons';
+import Forum from './Components/Forum/Forum';
 
 function App() {
 
@@ -14,8 +16,9 @@ function App() {
     <div>
       <Navbar navLinks={navLinks} />
       <div className="container">
-        <h1>My App</h1>
+
         <Buttons />
+        <Forum />
       </div>
     </div>
   );
