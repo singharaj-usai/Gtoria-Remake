@@ -89,8 +89,8 @@ function Forum() {
     return (
         <div className="container">
             <h1 className="text-center mb-4">Forum</h1>
-            <div className="row">
-                <div className="col-md-8">
+            <div className="row py-4">
+                <div className="col-md-8 shadow-sm bg-light">
                     {selectedPost ? (
                         <ForumPost {...selectedPost} />
                     ) : (
@@ -98,7 +98,7 @@ function Forum() {
                         )}
                     </div>
                     <div className="col-md-4">
-                        <div className="list-group">
+                        <div className="list-group shadow-sm">
                             <ListGroupItem active={activeItem === 'General Discussion'} onClick={() => handleItemClick('General Discussion')}>
                                 General Discussion
                             </ListGroupItem>

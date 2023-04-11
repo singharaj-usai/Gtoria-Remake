@@ -9,7 +9,7 @@ function TermsOfService() {
             <div className="panel-heading bg-danger p-3 text-white">
               <h4>Terms of Service</h4>
             </div>
-            <div className="panel-body bg-light p-3 shadow">
+            <div className="panel-body bg-light p-3 shadow-sm">
               <p>Welcome to our website! If you continue to browse and use this website, you are agreeing to comply with and be bound by the following terms and conditions of use, which together with our privacy policy govern our relationship with you in relation to this website. If you disagree with any part of these terms and conditions, please do not use our website.</p>
 
               <h5>The use of this website is subject to the following terms of use:</h5>
