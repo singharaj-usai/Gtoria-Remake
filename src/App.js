@@ -19,6 +19,7 @@ function App() {
       <div className='bg-secondary'>
       
         <Navbar navLinks={navLinks} />
+        <Alert />
           <Switch>
             <Route exact path="/">
               <Buttons />
