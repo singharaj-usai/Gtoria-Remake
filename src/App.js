@@ -1,5 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Alert from './Sections/Alert/Alert';
 import Navbar from './Sections/Navbar/Navbar';
 import Buttons from './Components/Banner/Banner';
 import Forum from './Components/Forum/Forum';
@@ -17,6 +18,7 @@ function App() {
   return (
     <Router>
       <div className='bg-secondary'>
+      
         <Navbar navLinks={navLinks} />
           <Switch>
             <Route exact path="/">
