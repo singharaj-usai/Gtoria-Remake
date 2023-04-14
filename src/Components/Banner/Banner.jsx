@@ -1,6 +1,7 @@
 import characters from "../../imgs/charactersfull.png";
 import React from "react"
 import {Link} from 'react-router-dom';
+import 'bootswatch/dist/lumen/bootstrap.min.css';
 import './Banner.css';
 
 function Banner() {
@@ -11,7 +12,7 @@ function Banner() {
           <div className=" d-flex justify-content-center text-center">
             <div className="text-white ">
               <div className="mb-3">Thousands of users are already reliving their childhood.</div>
-              <div className="fs-1">What are you waiting for?</div>
+              <h2 className="fs-1">What are you waiting for?</h2>
             </div>
           </div>
         </div>

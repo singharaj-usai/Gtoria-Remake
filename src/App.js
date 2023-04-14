@@ -5,6 +5,7 @@ import Navbar from './Sections/Navbar/Navbar';
 import Buttons from './Components/Banner/Banner';
 import Forum from './Components/Forum/Forum';
 import TOS from './Components/TOS/TOS';
+import Auth from './Components/Auth/Auth';
 import Footer from './Sections/Footer/Footer';
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
             </Route>
             <Route path="/tos">
               <TOS/>
+            </Route>
+            <Route path="/auth">
+              <Auth/>
             </Route>
           </Switch>
         </div>
