@@ -11,8 +11,11 @@ function Banner() {
         <div className="mask rounded-5 p-5 " style={{ backgroundColor: "rgba(0, 0, 0, 0.6)" }}>
           <div className=" d-flex justify-content-center text-center">
             <div className="text-white ">
-              <div className="mb-3">Thousands of users are already reliving their childhood.</div>
-              <h2 className="fs-1">What are you waiting for?</h2>
+              <h1 className="display-4 mb-3">Relive Your Childhood</h1>
+              <p className="lead mb-4">
+                Join thousands of users who are already reliving their childhood
+                by playing our games!
+              </p>
             </div>
           </div>
         </div>
@@ -23,7 +26,7 @@ function Banner() {
         <Link to="/games">
           <button type="submit" className="btn-lg m-2 ripple btn btn-success text-white fw-semibold">See Our Games →</button>
         </Link>
-          <a href="https://www.discord.gg/jyjHvWB34T" target="_blank" className="btn-lg m-2 ripple btn btn-primary fw-semibold">Join Our Discord →</a>
+          <a rel="noopener noreferrer" className="btn btn-primary btn-lg fw-bold" href="https://www.discord.gg/jyjHvWB34T" target="_blank">Join Our Discord →</a>
         </div>
         </div>
         </div>
